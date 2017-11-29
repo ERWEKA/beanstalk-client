@@ -32,6 +32,8 @@ CXX          ?= g++
 
 all: $(CEXAMPLES) $(CPPEXAMPLES) benchmark
 
+lib: $(SHAREDLIB)
+
 test: $(TESTS)
 	test/run-all
 
