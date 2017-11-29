@@ -6,7 +6,7 @@ SOURCES3    := $(wildcard examples/cpp/*.cc)
 TESTS       := $(SOURCES1:%.cc=%)
 CEXAMPLES   := $(SOURCES2:%.c=%)
 CPPEXAMPLES := $(SOURCES3:%.cc=%)
-DESTDIR      = /
+DESTDIR      ?= /
 PREFIX       = usr
 INCLUDEDIR   = $(PREFIX)/include/
 LIBDIR       = $(PREFIX)/lib/
